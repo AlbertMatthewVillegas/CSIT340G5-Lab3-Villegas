@@ -1,5 +1,5 @@
-function Part({ name, exercises }) {
-  return <p className="text-lg">{name} {exercises}</p>
+function Part({ part }) {
+  return <p className="text-lg">{part.name} {part.exercises}</p>
 }
 
 export default Part
