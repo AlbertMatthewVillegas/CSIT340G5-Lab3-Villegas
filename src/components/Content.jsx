@@ -1,11 +1,11 @@
 import Part from './Part'
 
-function Content({ part1, part2, part3 }) {
+function Content({ parts }) {
   return (
     <div className="p-4">
-      <Part part={part1} />
-      <Part part={part2} />
-      <Part part={part3} />
+        {parts.map((part) => (
+            <Part key={part.id} part={part} />
+        ))}
     </div>
   )
 }
